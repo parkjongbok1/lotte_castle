@@ -46,6 +46,9 @@
   bottom: 50px;
   right: 80px;
   border-radius: 50%;
+
+  animation: load_L 1.3s both;
+  animation-delay: 1s;
 }
 .visual_bg .v_open img {
   width: 100%;

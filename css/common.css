@@ -19,31 +19,11 @@
 }
 @keyframes load_L {
   0% {
-    transform: translateX(30px);
+    transform: translateX(15px);
     opacity: 0;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes load_B_T {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes load_H {
-  0% {
-    transform: translate(-50%, -30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, 0);
     opacity: 1;
   }
 }

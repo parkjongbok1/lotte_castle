@@ -1,0 +1,67 @@
+/*서브탭메뉴*/
+.smenu_wrap{
+  display: none;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+.smenu_wrap ul{
+  width: 95%;
+  height: 10vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smenu_wrap.amazing_menu ul{
+  height: 8vw;
+}
+.smenu_wrap.amazing_menu ul:nth-child(1){
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.smenu_wrap ul:nth-child(1) li::after{}
+.smenu_wrap ul li{
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+.smenu_wrap ul li::after{
+  content: "";
+  width: 1px;
+  height: 1.9444vw;
+  background: white;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.smenu_wrap.amazing_menu ul li::after{
+  /* width: 1px; */
+  height: 100%;
+}
+.smenu_wrap ul li:last-child::after{
+  display: none;
+}
+.smenu_wrap ul li a.smtab_on{
+  opacity: 1;
+  font-weight: 700;
+}
+.smenu_wrap ul li a{
+  font-size: 2.8vw;
+  
+  text-align: center;
+  line-height: 1.05;
+  color: white;
+  opacity: 0.8;
+  font-weight: 300;
+  display: block;
+}
+.smenu_wrap ul li.smtab_on a{
+  opacity: 1;
+  font-weight: 700;
+}

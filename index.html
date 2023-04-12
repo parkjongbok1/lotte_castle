@@ -1,0 +1,479 @@
+<!-- header start -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>문수로 롯데캐스 그랑파르크</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- <link rel="canonical" href="">  오픈시 링크 삽입 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="../meta/thumb.jpg" />
+    <!--<link rel="shortcut icon" href="../meta/favicon.ico">-->
+
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/srcoll_active.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body class="main">
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="image/logo.png" alt="" class="logo_on" />
+            <img src="image/logo_b.png" alt="" class="logo_off" />
+          </a>
+        </h1>
+
+        <ul class="menu">
+          <li><a href="planning.html">사업개요</a></li>
+          <li><a href="location.html">입지환경</a></li>
+          <li><a href="premium.html">프리미엄</a></li>
+          <li><a href="landscape.html">조경설계</a></li>
+          <li><a href="contact.html">찾아오시는길</a></li>
+          <li><a href="customer.html">관심고객등록</a></li>
+        </ul>
+
+        <div class="header_cont">
+          <a
+            href="https://www.lottecastle.co.kr/main/index.do"
+            class="item item01"
+          >
+            <img src="image/lottecastle_link.png" class="h_item_on" alt="" />
+            <img src="image/lottecastle_link_b.png" class="h_item_off" alt="" />
+          </a>
+
+          <div class="item item02">
+            <img src="image/call.png" class="h_item_on" alt="" />
+            <img src="image/call_b.png" class="h_item_off" alt="" />
+            <div class="h_item02"></div>
+          </div>
+
+          <a href="customer.html" class="item item03">
+            <img src="image/customer_lonk.png" class="h_item_on" alt="" />
+            <img src="image/customer_lonk_b.png" class="h_item_off" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- inner -->
+    </header>
+    <!-- 끝 header -->
+
+    <!--  Full-page Core Script -->
+    <script>
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          navigation: true,
+          anchors: [
+            "part1",
+            "part2",
+            "part3",
+            "part4",
+            "part5",
+            "part6",
+            "part7",
+            "part8",
+            "part9",
+            "part10",
+          ],
+          verticalCentered: true,
+          css3: true,
+          navigation: false,
+
+          afterLoad: function (anchorLink, index) {
+            if (index == 1) {
+            } else {
+            }
+
+            if (index == 2) {
+            } else {
+            }
+
+            if (index == 3) {
+            } else {
+            }
+
+            if (index == 4) {
+            } else {
+            }
+
+            if (index == 5) {
+            } else {
+            }
+          },
+          // 스크롤 사이드바
+          onLeave: function (anchorLink, index) {
+            // sec01
+            if (index == 1) {
+              $(".header").addClass("sec01_on");
+            } else {
+              $(".header").removeClass("sec01_on");
+            }
+
+            // sec02
+            if (index == 2) {
+              $(".premium").show();
+              $(".premium .premium_bg").addClass("pr_on");
+              $(".header").addClass("sec02_on");
+            } else {
+              //   $(".premium .premium_bg").removeClass("pr_on");
+              $(".header").removeClass("sec02_on");
+            }
+
+            // sec03
+            if (index == 3) {
+              $(".green").show();
+              $(".green .green_bg").addClass("gr_on");
+              $(".header").addClass("sec03_on");
+            } else {
+              //   $(".green .green_bg").removeClass("gr_on");
+              $(".header").removeClass("sec03_on");
+            }
+
+            // sec04
+            if (index == 4) {
+              $(".contact").show();
+              $(".contact .contact_bg").addClass("co_on");
+              $(".header").addClass("sec04_on");
+            } else {
+              //   $(".contact .contact_bg").removeClass("co_on");
+              $(".header").removeClass("sec04_on");
+            }
+
+            // sec05
+            if (index == 5) {
+              $(".fp-auto-height").show();
+              $(".header").addClass("sec05_on");
+            } else {
+              $(".header").removeClass("sec05_on");
+            }
+          },
+        });
+      });
+    </script>
+    <!-- // Full-page Core Script -->
+
+    <div id="all_wrap">
+      <!-- Scroll 우측 메뉴 -->
+      <!-- <div class="main_right">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="image/logo.png" alt="" />
+          </a>
+        </h1>
+
+        <div class="right_item active">
+          <div class="point_box">
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#part1">
+            <h2>OVERVIEW</h2>
+            <span>HOME</span>
+          </a>
+        </div>
+        <div class="right_item">
+          <div class="point_box">
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#part2">
+            <h2>PREMIUM</h2>
+            <span>CENTROBIZ</span>
+          </a>
+        </div>
+        <div class="right_item">
+          <div class="point_box">
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#part3">
+            <h2>DORMITORY</h2>
+            <span>SPECIAL DESIGN</span>
+          </a>
+        </div>
+        <div class="right_item">
+          <div class="point_box">
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#part4">
+            <h2>LOCATION</h2>
+            <span>PREMIUM</span>
+          </a>
+        </div>
+
+        <div class="foot_box">
+          <img src="image/point_fooot.png" alt="" />
+        </div>
+      </div> -->
+      <!-- // Scroll 우측 메뉴 -->
+
+      <div id="fullpage" style="">
+        <!-- // section1 -->
+        <div class="section visual" id="section1" style="">
+          <div class="sec01_box visual_bg">
+            <div class="title">
+              <span>최고의 만남! 신정, 두 번째 캐슬라이프</span>
+              <h2>문수로 롯데캐슬<br />그랑파르크</h2>
+            </div>
+
+            <div class="v_open">
+              <img src="image/open.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- // section2 premium -->
+        <div class="section premium" id="section2" style="">
+          <div class="premium_bg">
+            <div class="inner">
+              <div class="title">
+                <h2>premium</h2>
+                <strong>5</strong>
+              </div>
+
+              <div class="pr_slier_cont">
+                <div class="items">
+                  <div class="pr_arrow">
+                    <img src="image/pr_arrow_p.jpg" alt="" class="pr_p" />
+                    <img src="image/pr_arrow_n.jpg" alt="" class="pr_n" />
+                  </div>
+
+                  <div class="pr_slider_t">
+                    <div class="desc pr_01 active">
+                      <h3>옥동생활권</h3>
+                      <p>완벽하게 갖춰진<br />중신 인프라를 원스촙으로</p>
+                    </div>
+                    <div class="desc pr_02">
+                      <h3>명문학세권</h3>
+                      <p>명문학군과 유정학원가가<br />밀집된 교육1번지</p>
+                    </div>
+                    <div class="desc pr_03">
+                      <h3>청청숲세권</h3>
+                      <p>
+                        힐링을 선사하는 울산대공원과<br />태화강의 어반 네이처
+                      </p>
+                    </div>
+                    <div class="desc pr_04">
+                      <h3>쾌속교통권</h3>
+                      <p>
+                        봉월로와 공업탑로터리<br />인접으로 시내외 빠른 연결
+                      </p>
+                    </div>
+                    <div class="desc pr_05">
+                      <h3>브랜드특권</h3>
+                      <p>차별화된 품격과 가치의<br />메이저 브랜드 롯데캐슬</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pr_slider">
+                  <div class="item pr_item01">
+                    <img src="image/pr_slider01.jpg" alt="" />
+                  </div>
+                  <div class="item pr_item02">
+                    <img src="image/pr_slider02.jpg" alt="" />
+                  </div>
+                  <div class="item pr_item03">
+                    <img src="image/pr_slider03.jpg" alt="" />
+                  </div>
+                  <div class="item pr_item04">
+                    <img src="image/pr_slider04.jpg" alt="" />
+                  </div>
+                  <div class="item pr_item05">
+                    <img src="image/pr_slider05.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- // section3 green -->
+        <div class="section green" id="section3" style="">
+          <div class="green_bg inner">
+            <div class="title">
+              <span>자연을 닮다, 힐링을 담다</span>
+              <h2>GREEN LIFE</h2>
+            </div>
+
+            <div class="desc">
+              <div class="items">
+                <img src="image/green01.jpg" alt="" />
+                <div class="item">
+                  <h3>웰컴 프라자</h3>
+                  <p>
+                    넓은 집입공간이 주는 <br />
+                    시원한 개방감과 롯데캐슬의 품격
+                  </p>
+                </div>
+              </div>
+
+              <div class="items">
+                <img src="image/green02.jpg" alt="" />
+                <div class="item">
+                  <h3>프라이빗 플레이포레</h3>
+                  <p>
+                    놀이공간과 녹지가 어우러딘 <br />
+                    입주민들의 프라이빗 공간
+                  </p>
+                </div>
+              </div>
+
+              <div class="items">
+                <img src="image/green03.jpg" alt="" />
+                <div class="item">
+                  <h3>그린 테라스</h3>
+                  <p>
+                    내집 안에서 즐기는 <br />
+                    도심 속 힐링 녹지공간
+                  </p>
+                </div>
+              </div>
+
+              <div class="items">
+                <img src="image/green04.jpg" alt="" />
+                <div class="item">
+                  <h3>캐슬리안 센터</h3>
+                  <p>
+                    주변 환경과 조화를 이뤄주는 <br />
+
+                    조경시설과 캐슬리안센터
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- // section4 location -->
+        <div class="section contact" id="section4" style="">
+          <div class="contact_bg">
+            <div class="contents">
+              <div class="desc map"></div>
+
+              <div class="desc">
+                <div class="d_inner">
+                  <img
+                    src="image/contact_logo.png"
+                    alt=""
+                    class="contact_logo"
+                  />
+
+                  <div class="item">
+                    <nav>
+                      <img src="image/contact_item01.png" alt="" />
+                      <h3>울산광역시 남구 신정동 1267-6번지 일원</h3>
+                    </nav>
+
+                    <nav>
+                      <img src="image/contact_item02.png" alt="" />
+                      <h3>울산광역시 남구 신정동 1267-2번지</h3>
+                    </nav>
+                  </div>
+
+                  <span class="line"></span>
+
+                  <img
+                    src="image/contact_call.png"
+                    alt=""
+                    class="contact_call"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- // section5 footer -->
+        <div class="section fp-auto-height fo_on" id="section5">
+          <div class="footer" style="height: 280px">
+            <div class="desc">
+              <div class="item">
+                <img src="image/foot_logo.png" alt="" class="foot_logo" />
+              </div>
+              <div class="item">
+                <nav>
+                  <a href="https://www.lottecastle.co.kr/privacy/index.do">
+                    개인정보처리방침
+                  </a>
+                  <span class="foot_line"></span>
+                  <h3>고객센터 1688-550</h3>
+                </nav>
+
+                <div class="family_box">
+                  <div class="family_text">
+                    <span>Family Site</span>
+                  </div>
+                  <ul class="family_list">
+                    <li>
+                      <a target="_blank" href="https://www.lottecon.co.kr/"
+                        >롯데건설</a
+                      >
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://ethics.lottecon.co.kr/"
+                        >윤리경영</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.elyes.co.kr/main/main.do"
+                        >ELYES</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="desc">
+              <div class="item">
+                <h4>
+                  <span>ⓒ</span>Lotte Engineering & Construction. all right
+                  reserved.
+                </h4>
+              </div>
+
+              <div class="item">
+                <a
+                  href="http://www.i-award.or.kr/Web/Assess/FinalCandidateView.aspx?REG_SEQNO=10061"
+                >
+                  <img src="image/foot_item01.png" alt="" />
+                </a>
+
+                <img src="image/foot_item02.png" alt="" />
+
+                <a
+                  href="https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&crtfYear=2022&searchCondition=2&searchKeyword=%EB%A1%AF%EB%8D%B0%EA%B1%B4%EC%84%A4&__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5u"
+                  target="_blank"
+                >
+                  <img src="image/foot_item03.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // fullpage -->
+    </div>
+    <!-- // all_wrap -->
+  </body>
+</html>
